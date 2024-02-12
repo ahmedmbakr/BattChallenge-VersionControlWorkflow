@@ -1,0 +1,38 @@
+\section{Issues Handling} \label{section: issues handling}
+
+\subsection{Issues Creation}
+
+Issues will be created for each individual feature that needs to be implemented, or necessary fix. These issues will be tracked via Github. A feature branch will be created for each issue, which will share its number for linking purposes. Many issues will be created based on each deliverable at the start of work, but new issues will be added during sprints if a need arises.
+
+\subsection{Issues Tracking}
+
+Github projects will be used to track progress on different issues and pull requests. This will make it easy for the integrator to track pull requests, and for the project manager to understand the current progress at a glance. Issues can be placed one of the below categories, and must move through each category before being considered resolved. If unexpected problems arise (such as a feature failing its testing) it can be moved back to an earlier stage. The categories are as follows:
+
+\textbf{Todo}: Work has not begun on this issue. A feature branch has not yet been created.
+
+\textbf{In Progress}: This issue is being targeted during this sprint. A feature branch has been created and the issue is being actively worked on.
+
+\textbf{Implemented}: The issue-associated feature has been fully implemented and requires testing.
+
+\textbf{Testing}: The feature is actively being tested. This testing is unit testing specific to the feature, overall testing for a release is handled separately.
+
+\textbf{Tested}: The feature has passed all testing. It is awaiting approval and merge by the integrator.
+
+\textbf{Merging}: The integrator is currently working on merging this feature to Develop. Any merge conflicts are resolved during this time, and the code and testing procedures are double-checked by the integrator.
+
+\textbf{Merged}: The integrator has successfully merged the fully tested feature to the Develop branch. It now awaits acknowledgement by the project manager.
+
+\textbf{Done}: The project manager has acknowledged the merged feature and declared it done.
+
+\subsection{Issues Assignment}
+
+Assignment will be handled by the team lead. Issues in the to-do list will be handed to specific developers who will work on them for the duration of a sprint. In general, assignment will occur at the beginning of each sprint. Features will be broken into small pieces, such that each feature is assigned to one developer at a time. Developers can, of course, ask for help, but in general tasks should be well-matched to their abilities, knowledge base, and availability.
+
+\subsection{Pull Request Review Process}
+
+The integrator will manually review all feature pull requests before merging them to Develop. In addition to a basic inspection of the code added, ensuring that it matches the specifications on the linked issue, the integrator will examine the testing performed. If the testing is not adequate, the integrator will request further testing. If the testing is sufficient, the integrator will attempt to merge the feature to Develop.
+
+\subsection{Feature Testing Process}
+
+The feature testing process will depend heavily on which feature is being added. However, testing at the feature level should focus on small-scale unit tests around the code being changed, rather than testing of the overall program. The reason for this approach is that it may be impractical to impossible to test every feature on a large scale. Early on, not enough of the program will be completed for large-scale testing, and later bugs present in other sections of the program may lead to inaccurate test results. Therefore, major features should go through a set of unit tests before their implementation. If the feature will have a large impact on the program overall, then any complete sections should be tested alongside the feature, to ensure that all modules are inter-operating correctly.
+
